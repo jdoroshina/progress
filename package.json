@@ -1,0 +1,19 @@
+{
+  "name": "progress",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"*.html, js/**/*.js, *.css\"",
+    "lint": "npm run stylelint && npm run eslint",
+    "eslint": "eslint js/",
+    "stylelint": "stylelint \"*.css\""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "eslint": "^9.9.1",
+    "eslint-define-config": "^2.1.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
