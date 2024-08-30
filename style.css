@@ -33,4 +33,34 @@ main {
   line-height: 24px;
 }
 
+/* Progress visual bar styles */
+.progress__visual-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress__svg {
+  width: 130px;
+  height: 130px;
+}
+
+.progress__track {
+  fill: none;
+  stroke: #eaf0f6;
+  stroke-width: 10;
+}
+
+.progress__indicator {
+  fill: none;
+  stroke: #015cff;
+  stroke-width: 10;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
 }
