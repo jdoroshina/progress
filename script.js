@@ -4,16 +4,12 @@ const hideToggle = document.getElementById('hide-toggle');
 const progressVisual = document.querySelector('.progress__visual');
 
 const updateVisualState = () => {
-  if (hideToggle.checked) {
-    progressVisual.classList.add('progress__visual--hidden');
-    progressVisual.classList.remove('progress__visual--normal', 'progress__visual--animated');
-  } else if (animateToggle.checked) {
-    progressVisual.classList.add('progress__visual--animated');
-    progressVisual.classList.remove('progress__visual--normal', 'progress__visual--hidden');
-  } else {
-    progressVisual.classList.add('progress__visual--normal');
-    progressVisual.classList.remove('progress__visual--animated', 'progress__visual--hidden');
-  }
+  const isHidden = hideToggle.checked;
+  const isAnimated = animateToggle.checked;
+
+  progressVisual.classList.toggle('progress__visual--hidden', isHidden);
+  progressVisual.classList.toggle('progress__visual--animated', !isHidden && isAnimated);
+  progressVisual.classList.toggle('progress__visual--normal', !isHidden && !isAnimated);
 };
 
 const updateProgressBar = (value) => {
