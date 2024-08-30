@@ -163,3 +163,21 @@ main {
     flex-direction: row;
   }
 }
+
+/* states */
+.progress__visual--animated .progress__svg {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.progress__visual--hidden {
+  visibility: hidden;
+}

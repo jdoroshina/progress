@@ -6,6 +6,10 @@ export default defineConfig([
       ecmaVersion: 2024,
       sourceType: 'module',
     },
+    env: {
+      browser: true,
+      es2024: true,
+    },
     rules: {
       // Основные синтаксические правила
       'eqeqeq': 'error', // Требует использования строгого равенства

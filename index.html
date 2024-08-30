@@ -10,7 +10,7 @@
 
   <body>
     <main>
-      <section class="progress progress--normal">
+      <section class="progress">
 
         <header class="progress__header">
           <h1 class="progress__title">Progress</h1>
@@ -19,7 +19,7 @@
         <div class="progress__visual-container">
 
           <!-- Progress visual bar -->
-          <div class="progress__visual">
+          <div class="progress__visual progress__visual--normal">
             <svg class="progress__svg" viewBox="0 0 100 100" aria-label="Progress indicator">
               <circle class="progress__track" cx="50" cy="50" r="45" aria-hidden="true"></circle>
               <circle class="progress__indicator" cx="50" cy="50" r="45"></circle>
@@ -35,7 +35,7 @@
             </label>
 
             <label class="progress__label" for="animate-toggle">
-              <input class="progress__toggle" type="checkbox" role="switch" id="animate-toggle" name="animate" checked>
+              <input class="progress__toggle" type="checkbox" role="switch" id="animate-toggle" name="animate">
               <span>Animate</span>
             </label>
 
@@ -48,7 +48,7 @@
       </section>
 
     </main>
-    <script src="main.js" type="module"></script>
+    <script src="script.js"></script>
   </body>
 
 </html>
