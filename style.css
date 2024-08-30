@@ -63,4 +63,74 @@ main {
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
+
+/* Control elements styles */
+.progress__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  width: 100%;
+}
+
+.progress__label {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.progress__input {
+  width: 50px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.progress__toggle {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  font-size: inherit;
+  margin: auto;
+  width: 48px;
+  height: 32px;
+  background-color: #dae6ec;
+  box-sizing: border-box;
+  border: 1px solid #dae6ec;
+  border-radius: 20px;
+  vertical-align: text-bottom;
+  color: inherit;
+}
+
+.progress__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  box-sizing: border-box;
+  width: 25px;
+  height: 025px;
+  margin-left: 1px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.progress__toggle:checked {
+  background-color: #015cff;
+  border: 1px solid #015cff;
+}
+
+.progress__toggle:checked::before {
+  left: 18px;
+}
+
+}
 }
