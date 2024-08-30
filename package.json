@@ -6,7 +6,8 @@
     "start": "browser-sync start --server --no-ui --files \"*.html, js/**/*.js, *.css\"",
     "lint": "npm run stylelint && npm run eslint",
     "eslint": "eslint js/",
-    "stylelint": "stylelint \"*.css\""
+    "stylelint": "stylelint \"*.css\"",
+    "deploy": "gh-pages -d build"
   },
   "license": "ISC",
   "devDependencies": {
