@@ -144,5 +144,22 @@ main {
   left: 18px;
 }
 
+/* Portrait */
+@media (orientation: portrait) {
+  .progress {
+      width: 320px;
+      height: 568px;
+  }
+}
+
+/* Landscape */
+@media (orientation: landscape) {
+  .progress {
+      width: 568px;
+      height: 320px;
+  }
+
+  .progress__visual-container {
+    flex-direction: row;
 }
 }
