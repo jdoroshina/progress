@@ -10,6 +10,8 @@ const updateVisualState = () => {
   progressVisual.classList.toggle('progress__visual--hidden', isHidden);
   progressVisual.classList.toggle('progress__visual--animated', !isHidden && isAnimated);
   progressVisual.classList.toggle('progress__visual--normal', !isHidden && !isAnimated);
+
+  progressVisual.setAttribute('aria-hidden', isHidden.toString());
 };
 
 const updateProgressBar = (value) => {
