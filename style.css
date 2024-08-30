@@ -12,6 +12,18 @@ main {
   align-items: center;
 	height: 100%;
 }
+
+.no-spinner {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
 .progress {
   display: flex;
   flex-direction: column;
