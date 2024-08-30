@@ -20,6 +20,20 @@ const updateProgressBar = (value) => {
   progressVisual.querySelector('.progress__indicator').style.strokeDashoffset = offset;
 };
 
+
+const handleProgressInput = (event) => {
+  let value = parseInt(event.target.value, 10);
+
+  if (isNaN(value)) {
+    value = 0;
+  }
+
+  value = Math.min(100, Math.max(0, value));
+
+  event.target.value = value;
+  updateProgressBar(value);
+};
+
 const handleProgressInput = (event) => {
   const value = Math.min(100, Math.max(0, event.target.value));
   updateProgressBar(value);
