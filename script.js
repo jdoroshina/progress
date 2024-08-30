@@ -27,3 +27,17 @@ const handleProgressInput = (event) => {
   updateProgressBar(value);
 };
 
+const handleToggleChange = () => {
+  updateVisualState();
+};
+
+const initFormControls = () => {
+  progressInput.addEventListener('input', handleProgressInput);
+  animateToggle.addEventListener('change', handleToggleChange);
+  hideToggle.addEventListener('change', handleToggleChange);
+
+  updateProgressBar(progressInput.value);
+  updateVisualState();
+};
+
+initFormControls();
