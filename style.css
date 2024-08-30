@@ -141,7 +141,7 @@ main {
 }
 
 .progress__toggle:checked::before {
-  left: 18px;
+  left: 19px;
 }
 
 /* Portrait */
