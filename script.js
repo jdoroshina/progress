@@ -15,3 +15,10 @@ const updateVisualState = () => {
     progressVisual.classList.remove('progress__visual--animated', 'progress__visual--hidden');
   }
 };
+
+const updateProgressBar = (value) => {
+  const maxOffset = 283;
+  const offset = maxOffset - (value / 100) * maxOffset;
+  progressVisual.querySelector('.progress__indicator').style.strokeDashoffset = offset;
+};
+
