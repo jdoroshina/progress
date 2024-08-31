@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "no-empty-source": true,
+    "color-hex-length": "long",
+    "declaration-block-no-duplicate-properties": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "unit-no-unknown": true,
+    "declaration-no-important": true,
+    "selector-class-pattern": "^[a-z0-9]+((--|__)?[a-z0-9]+(-[a-z0-9]+)*)*$"
+  }
+}
